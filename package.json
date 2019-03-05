@@ -1,0 +1,17 @@
+{
+  "name": "ascii-art",
+  "version": "1.0.0",
+  "description": "",
+  "main": "art.js",
+  "scripts": {
+    "convert": "node ./converter.js",
+    "test": "./test-log.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chroma-js": "~2.0.3",
+    "prettier": "~1.16.4"
+  }
+}
