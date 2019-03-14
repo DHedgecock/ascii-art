@@ -29,11 +29,7 @@ fs.readFile('./original.txt', 'utf-8', (err, txt) => {
         return new Array(p2.length).fill(' ').join('') + newline
       } else {
         const [red, green, blue] = chroma(p1).rgb()
-        return (
-          `\\x1b[38;2;${red};${green};${blue}m${new Array(p2.length)
-            .fill('#')
-            .join('')}\\x1b[0m` + newline
-        )
+        return `\\x1b[38;2;${red};${green};${blue}m${p2}\\x1b[0m` + newline
       }
     }
   )
